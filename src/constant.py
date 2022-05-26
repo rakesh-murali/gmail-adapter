@@ -5,6 +5,8 @@ QUERY_KEYWORD_MAPPER = {
     'equals': '+',
     'not-equals': '-',
     'not-contains': '-',
+    'in': '+',
+    'not-in': '-',
     # action keywords
     'read': 'removeLabelIds',
     'unread': 'addLabelIds',
@@ -15,5 +17,19 @@ QUERY_KEYWORD_MAPPER = {
     'any': 'OR',
     'all': 'AND',
   }
+
+FIELD_MAPPER = {
+  'subject': 'subject',
+  'from': 'from',
+  'to': 'to',
+  'have': '',
+  'not-have': '',
+  'in': 'in',
+  'not-in': 'in',
+  'has': 'has',
+  'not-has': 'has',
+  'before': 'before',
+  'after': 'after'
+}
 
 EMAIL_TABLE_FIELDS = ('subject', 'delivered_at', 'body', 'mail_from')
